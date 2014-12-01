@@ -10,7 +10,7 @@ RUN apt-get install -y openssh-server && apt-get clean
 RUN adduser jenkins
 RUN echo "jenkins:jenkins" | chpasswd
 
-RUN apt-get install -y openjdk-7-jre-headless maven git && apt-get clean
+RUN apt-get install -y openjdk-7-jdk maven git && apt-get clean
 
 RUN wget http://dl.bintray.com/sbt/debian/sbt-${sbt_version}.deb -O /tmp/sbt.deb && \
     dpkg -i /tmp/sbt.deb && \
