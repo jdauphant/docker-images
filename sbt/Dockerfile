@@ -1,4 +1,4 @@
-FROM java:7
+FROM dockerfile/java:openjdk-7-jre
 
 MAINTAINER Julien DAUPHANT
 
