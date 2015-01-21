@@ -9,8 +9,8 @@ RUN mkdir -p /var/run/sshd
 RUN apt-get install -y openssh-server && apt-get clean
 RUN adduser jenkins
 RUN echo "jenkins:jenkins" | chpasswd
-RUN mkdir /home/jenkins/.m2
-RUN chown -R jenkins:jenkins /home/jenkins/.m2
+RUN mkdir /home/jenkins/.m2 /home/jenkins/.ivy2
+RUN chown -R jenkins:jenkins /home/jenkins
 
 RUN apt-get install -y openjdk-7-jdk maven git && apt-get clean
 
