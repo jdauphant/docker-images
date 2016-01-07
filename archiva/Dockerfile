@@ -2,8 +2,8 @@ FROM java:7u65
 
 MAINTAINER Julien DAUPHANT
 
-ENV ARCHIVA_VERSION 2.1.1
-ENV ARCHIVA_SHA1 5a7ddff9d85637cafa1e982a7b313a3ffe8190fa
+ENV ARCHIVA_VERSION 2.2.0
+ENV ARCHIVA_SHA1 69c922441b02bf75e5a3067220bf8f13dbd0bb98
 ENV ARCHIVA_BASE /var/archiva
 
 RUN curl -sSLo /tmp/apache-archiva-$ARCHIVA_VERSION-bin.tar.gz http://mir2.ovh.net/ftp.apache.org/dist/archiva/$ARCHIVA_VERSION/binaries/apache-archiva-$ARCHIVA_VERSION-bin.tar.gz \
